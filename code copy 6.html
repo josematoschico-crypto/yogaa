@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yoga em Casa - Módulo Avançado</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#87CEEB", // Celeste as Primary
+                        "accent-lilac": "#B19CD9",
+                        "accent-turquoise": "#40E0D0",
+                        "neutral-brown": "#5D4037",
+                        "background-light": "#FDFBF9",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .glass-effect { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-4">
+<div class="flex items-center justify-between max-w-2xl mx-auto">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">spa</span>
+<h1 class="text-xl font-bold tracking-tight text-neutral-brown dark:text-primary">Módulo Avançado</h1>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-primary text-xl">graphic_eq</span>
+<span class="text-xs font-semibold text-neutral-brown dark:text-slate-200 uppercase tracking-wider">Música Funcional Ativa</span>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-2xl mx-auto w-full pb-24">
+<!-- Hero Section: Current Core Practice -->
+<section class="p-4">
+<div class="relative overflow-hidden rounded-xl bg-neutral-brown text-white shadow-xl">
+<div class="absolute inset-0 opacity-40 bg-gradient-to-t from-black to-transparent z-10"></div>
+<div class="h-56 w-full bg-cover bg-center" data-alt="Pessoa praticando yoga avançado em equilíbrio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBhnA-ijs4gdhN4DKKHgF9551LrbafdtKwAU5_5W3jaxddhXX8gSZn6T6t7LsxQjOU1Tv_TlvPMklOk2UL30fNuE1dvFHpobRNZwPla9ca5mAxexQrRXNAvuGgI3O-biVP8UaSu1a7VhqnSTBzntGL2G37YMbdZSRn0vb0LvrAniELrdeuSBF2Bkgz0Mxeko47IaMpigFwSXCpagmYi54PClHOhV7mxH8FLQtVpR6M9AD-uRflIQprEdSSlUmqRdowfFUc7BaQaqOSZ');"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 z-20">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-accent-turquoise text-neutral-brown text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Destaque</span>
+<span class="text-xs font-medium text-slate-200">Prática Principal • Nível Avançado</span>
+</div>
+<h2 class="text-2xl font-bold leading-tight mb-4">Mestre da Respiração e Equilíbrio</h2>
+<button class="w-full sm:w-auto bg-primary hover:bg-primary/90 text-neutral-brown font-bold py-3 px-8 rounded-xl transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                        Começar Agora
+                    </button>
+</div>
+</div>
+</section>
+<!-- Advanced Classes List -->
+<section class="px-4 py-2">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold text-neutral-brown dark:text-slate-100">Próximas Práticas</h3>
+<span class="text-sm text-primary font-medium">Ver todas</span>
+</div>
+<div class="space-y-4">
+<!-- Class Item 1 -->
+<div class="flex gap-4 p-3 bg-white dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
+<div class="relative shrink-0">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" data-alt="Thumbnail de aula de Vinyasa Flow" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCg45Hcz7QzVrCqmGbOm9yAoqazLlHLwQv6wHAnunMLZMlH2wGRjYvzrzKraXGtkXjytjG7YsKlnOkeUx5p6hmCK96DkLX9PlXMJmxy54VjlmxKkl-TAnNEAzjwedya0TavDRF3B5Bv33WqyoKA0RWmShzd8qQW--qIW4w3keG4rfdEFojPQ1JA48oHoc6u-yffCBKWZ2HtHM_xd7k9xTepK3t7H1tXdKN9zXY_e8gSEPWdv9NVvZ_ZcOQZgb9ShXHHkr4myfIVY9SB');"></div>
+<div class="absolute bottom-1 right-1 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded">60 min</div>
+</div>
+<div class="flex flex-col justify-between flex-1 py-1">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-neutral-brown dark:text-slate-100 leading-tight">Vinyasa Flow Intenso</h4>
+<span class="bg-accent-lilac/20 text-accent-lilac text-[10px] font-bold px-2 py-0.5 rounded-full border border-accent-lilac/30">EM PROGRESSO</span>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Foco em transições fluidas e força.</p>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+<span class="text-[11px] font-semibold uppercase">Avançado</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Class Item 2 -->
+<div class="flex gap-4 p-3 bg-white dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
+<div class="relative shrink-0">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" data-alt="Thumbnail de aula de Asanas de Inversão" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSe-zobFLq1LSYJ3Hj6_ACinvvma5k2mR038svvBHWscqTbDPKzgTHejdKURZKBtYd6PvIfJxaLEABWrAKOqt5k6Xc-RBRw886N6xtLHah1XTBWCCSmcpOX08_7pOor3g4pZVN_QZ0qRGdAXCRettUORLkzQqNBzE9trxWkdYAhkNdGJhrCgMYY2F64jDbLk-48es_J2MrbwZPE-2ldJnsaBu-9cV51vi9C5tEG5mHVI6XaQd2EcHXzvmwekBFMIJHoKJJFRhuDpul');"></div>
+<div class="absolute bottom-1 right-1 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded">45 min</div>
+</div>
+<div class="flex flex-col justify-between flex-1 py-1">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-neutral-brown dark:text-slate-100 leading-tight">Asanas de Inversão</h4>
+<span class="bg-accent-turquoise/20 text-accent-turquoise text-[10px] font-bold px-2 py-0.5 rounded-full border border-accent-turquoise/30">CONCLUÍDO</span>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Equilíbrio sobre mãos e cabeça.</p>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+<span class="text-[11px] font-semibold uppercase">Avançado</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Class Item 3 -->
+<div class="flex gap-4 p-3 bg-white dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
+<div class="relative shrink-0">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" data-alt="Thumbnail de Meditação Transcendental" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhGXMWUpY7k-1lojINFaMkQGnYo6WYh0MsF194qv6815QOFw1qdqyycY0ZeHLSVFw-MHnVTBpWJIL3hGZauUskhN8GqHXwbJ_oFWRn920As2mqSYzXUmePQU0gm7u-9MGD05snorg1z9_6YtEfvOcFoNmtis70T_qTU8d6_VSXUrQHfFBVORt4BWGZXzApCEwWAAcC8tdAxUzbtnV2ERh9pwuv8lfAgYYvIE-DK1XokUr9UAN0pHDTc-YLWQhZTfQQhT3Gr5JENV5R');"></div>
+<div class="absolute bottom-1 right-1 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded">30 min</div>
+</div>
+<div class="flex flex-col justify-between flex-1 py-1">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-neutral-brown dark:text-slate-100 leading-tight">Meditação Transcendental</h4>
+<span class="bg-slate-100 dark:bg-slate-700 text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded-full">NÃO INICIADO</span>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Nível profundo de relaxamento mental.</p>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+<span class="text-[11px] font-semibold uppercase">Avançado</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-4 pb-6 pt-2 z-50">
+<div class="flex justify-around items-center max-w-2xl mx-auto">
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">grid_view</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter">Módulos</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">exercise</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter">Práticas</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter">Perfil</span>
+</a>
+</div>
+</nav>
+</body></html>

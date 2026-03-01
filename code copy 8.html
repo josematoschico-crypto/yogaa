@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#48cae4", /* Light Blue (Celeste) */
+                        "secondary": "#0096c7", /* Turquoise */
+                        "accent": "#b185db", /* Lilac */
+                        "neutral-brown": "#4a3728", /* Brown */
+                        "background-light": "#f8fafd",
+                        "background-dark": "#1a1614",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Yoga em Casa - Planos de Módulo</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-3xl" style="">filter_vintage</span>
+<span class="font-bold text-xl tracking-tight text-slate-900 dark:text-white" style="">Yoga em Casa</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300" style="">
+<span class="material-symbols-outlined" style="">person</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<main class="flex-grow max-w-7xl mx-auto w-full px-4 py-8">
+<div class="text-center mb-10">
+<h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-3" style="">Escolha seu Plano de Prática</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto" style="">
+                Acesso vitalício com pagamento único. <span class="text-secondary font-semibold" style="">Sem mensalidades.</span>
+</p>
+</div>
+<!-- Pricing Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Jornada Iniciante -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 flex flex-col transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="mb-6">
+<div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center text-secondary mb-4">
+<span class="material-symbols-outlined text-2xl" style="">blind</span>
+</div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white" style="">Jornada Iniciante</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-2" style="">Perfeito para quem está começando. Foco total nos fundamentos e posturas básicas.</p>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-sm font-semibold text-slate-500" style="">R$</span>
+<span class="text-4xl font-black text-slate-900 dark:text-white" style="">25,00</span>
+</div>
+<span class="inline-block px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-6" style="">Pagamento Único</span>
+<button class="w-full py-3 px-4 bg-primary hover:bg-secondary text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2" style="">
+                        Quero este Plano
+                        <span class="material-symbols-outlined text-sm" style="">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Mestre da Meditação (Most Popular) -->
+<div class="relative bg-white dark:bg-slate-900 rounded-xl border-2 border-accent p-6 flex flex-col shadow-2xl scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg" style="">
+                    Mais Popular
+                </div>
+<div class="mb-6">
+<div class="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center text-accent mb-4">
+<span class="material-symbols-outlined text-2xl" style="">self_improvement</span>
+</div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white" style="">Mestre da Meditação</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-2" style="">Técnicas avançadas de respiração para foco profundo e calma mental absoluta.</p>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-2 text-accent">
+<span class="text-sm font-semibold" style="">R$</span>
+<span class="text-4xl font-black" style="">50,00</span>
+</div>
+<span class="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wider mb-6" style="">Pagamento Único</span>
+<button class="w-full py-3 px-4 bg-accent hover:bg-accent/90 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2 shadow-lg shadow-accent/30" style="">
+                        Quero este Plano
+                        <span class="material-symbols-outlined text-sm" style="">bolt</span>
+</button>
+</div>
+</div>
+<!-- Flexibilidade Total -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 flex flex-col transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="mb-6">
+<div class="w-12 h-12 rounded-lg bg-neutral-brown/20 flex items-center justify-center text-neutral-brown mb-4">
+<span class="material-symbols-outlined text-2xl" style="">accessibility_new</span>
+</div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white" style="">Flexibilidade Total</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-2" style="">Foco em alongamento profundo e mobilidade articular para um corpo livre de tensões.</p>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-sm font-semibold text-slate-500" style="">R$</span>
+<span class="text-4xl font-black text-slate-900 dark:text-white" style="">75,00</span>
+</div>
+<span class="inline-block px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-bold uppercase tracking-wider mb-6" style="">Pagamento Único</span>
+<button class="w-full py-3 px-4 bg-neutral-brown hover:bg-neutral-brown/90 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2" style="">
+                        Quero este Plano
+                        <span class="material-symbols-outlined text-sm" style="">fitness_center</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap items-center justify-center gap-8 py-8 border-t border-slate-200 dark:border-slate-800 opacity-70 grayscale">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="">verified_user</span>
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Checkout Seguro</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="">all_inclusive</span>
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Acesso Vitalício</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="">assignment_turned_in</span>
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Certificado Incluso</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="">verified</span>
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Garantia 7 Dias</span>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="sticky bottom-0 w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pb-safe">
+<div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 flex-1 transition-colors hover:text-primary" href="#" style="">
+<span class="material-symbols-outlined" style="">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider" style="">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary flex-1 transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">view_module</span>
+<span class="text-[10px] font-bold uppercase tracking-wider" style="">Módulos</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 flex-1 transition-colors hover:text-primary" href="#" style="">
+<span class="material-symbols-outlined" style="">vital_signs</span>
+<span class="text-[10px] font-bold uppercase tracking-wider" style="">Práticas</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 flex-1 transition-colors hover:text-primary" href="#" style="">
+<span class="material-symbols-outlined" style="">person</span>
+<span class="text-[10px] font-bold uppercase tracking-wider" style="">Perfil</span>
+</a>
+</div>
+</nav>
+</body></html>

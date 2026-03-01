@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Finalizar Compra - Yoga em Casa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-md mx-auto flex items-center p-4">
+<button class="flex items-center justify-center p-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold tracking-tight pr-10">Finalizar Compra</h1>
+</div>
+</header>
+<main class="max-w-md mx-auto p-4 space-y-6">
+<!-- Order Summary Section -->
+<section class="space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<h2 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Resumo do Pedido</h2>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-sm relative overflow-hidden">
+<!-- Discrete Lotus Motif -->
+<div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]">filter_vintage</span>
+</div>
+<div class="flex gap-4">
+<div class="h-20 w-20 rounded-lg bg-cover bg-center shrink-0 border border-slate-100 dark:border-slate-800" data-alt="Person practicing meditation in a peaceful room" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCL_Dcw3YhUWFzq7oTQZCQLDSFRHnQceGdeTvOqegkh4oaX9BrXx_Aegl9BMY9n4RBPtZfAcwwFeGTiwhC77zkSGoRaJRX_QPaTJHD_GK7MWlgDw65dfauJ-dz2kwWxcRu8ZDRFjfjGXMeoon_pH3w2yUeN-_6DQd5OrIFqe8GIJt-scq02jL-2bDvcN8zqlv7W4LayF3aJt9skgnEO7v0gFVVagu-5WEo8iQiGQNjOap6FOfbuzCB1YGvz89Ujb3uT0D5-8O6O1KqY");'>
+</div>
+<div class="flex flex-col justify-center">
+<span class="text-[10px] font-bold py-0.5 px-2 bg-primary/10 text-primary rounded-full w-fit mb-1">
+                            ACESSO VITALÍCIO
+                        </span>
+<h3 class="text-base font-bold text-slate-900 dark:text-slate-100">Mestre da Meditação</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Pagamento Único</p>
+</div>
+<div class="ml-auto flex flex-col justify-center items-end">
+<span class="text-lg font-bold text-primary">R$ 67,00</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Payment Methods Section -->
+<section class="space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">payments</span>
+<h2 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Forma de Pagamento</h2>
+</div>
+<div class="space-y-3">
+<!-- PIX Option -->
+<label class="group relative flex items-center justify-between p-4 rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer has-[:checked]:border-primary transition-all">
+<input checked="" class="hidden peer" name="payment" type="radio"/>
+<div class="flex items-center gap-4">
+<div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 group-has-[:checked]:text-primary group-has-[:checked]:bg-primary/10">
+<span class="material-symbols-outlined">qr_code_2</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Pix</p>
+<p class="text-xs text-green-600 font-medium">Liberação instantânea</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-700 peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</label>
+<!-- Credit Card Option -->
+<label class="group relative flex items-center justify-between p-4 rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer has-[:checked]:border-primary transition-all">
+<input class="hidden peer" name="payment" type="radio"/>
+<div class="flex items-center gap-4">
+<div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 group-has-[:checked]:text-primary group-has-[:checked]:bg-primary/10">
+<span class="material-symbols-outlined">credit_card</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Cartão de Crédito</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Até 12x no cartão</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-700 peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</label>
+<!-- Boleto Option -->
+<label class="group relative flex items-center justify-between p-4 rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer has-[:checked]:border-primary transition-all">
+<input class="hidden peer" name="payment" type="radio"/>
+<div class="flex items-center gap-4">
+<div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 group-has-[:checked]:text-primary group-has-[:checked]:bg-primary/10">
+<span class="material-symbols-outlined">barcode_scanner</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Boleto Bancário</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Processamento em até 3 dias</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-700 peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Security Badges -->
+<section class="grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center p-3 rounded-lg bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
+<span class="material-symbols-outlined text-primary mb-1">verified_user</span>
+<p class="text-[10px] font-bold uppercase text-slate-600 dark:text-slate-400">Pagamento 100% Seguro</p>
+</div>
+<div class="flex flex-col items-center p-3 rounded-lg bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
+<span class="material-symbols-outlined text-primary mb-1">assignment_return</span>
+<p class="text-[10px] font-bold uppercase text-slate-600 dark:text-slate-400">Garantia de Arrependimento</p>
+</div>
+</section>
+<!-- CTA Section -->
+<footer class="pt-6 pb-12">
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center px-2">
+<span class="text-slate-500 dark:text-slate-400 font-medium">Total a pagar</span>
+<span class="text-2xl font-bold text-slate-900 dark:text-slate-100">R$ 67,00</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
+                    Confirmar e Pagar
+                </button>
+<div class="flex items-center justify-center gap-1.5 text-slate-400 dark:text-slate-600">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-xs">Criptografia de ponta a ponta</span>
+</div>
+</div>
+</footer>
+</main>
+<!-- Background Decorative Element -->
+<div class="fixed top-0 right-0 -z-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-30 -translate-x-1/2 translate-y-1/2"></div>
+</body></html>

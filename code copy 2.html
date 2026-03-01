@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center p-4">
+<div class="max-w-2xl w-full bg-white dark:bg-[#2d1e18] shadow-xl rounded-xl overflow-hidden border border-primary/10">
+<!-- Header -->
+<div class="bg-primary p-6 flex items-center justify-between text-white">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">admin_panel_settings</span>
+<h1 class="text-xl font-bold tracking-tight">Painel Administrativo</h1>
+</div>
+<div class="text-xs uppercase tracking-widest font-semibold bg-white/20 px-3 py-1 rounded-full">
+                Novo Registro
+            </div>
+</div>
+<!-- Notification Banner -->
+<div class="p-6 border-b border-primary/10 bg-primary/5">
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight mb-2">Novo Cadastro de Aluno</h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Um novo aluno completou o processo de inscrição e aguarda ativação de conta.</p>
+</div>
+<!-- Student Data -->
+<div class="p-6 space-y-4">
+<h3 class="text-primary text-sm font-bold uppercase tracking-wider">Dados do Aluno</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col p-3 bg-background-light dark:bg-background-dark/50 rounded-lg border border-primary/5">
+<span class="text-slate-500 dark:text-slate-400 text-xs font-medium">Nome Completo</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Ricardo Silva</span>
+</div>
+<div class="flex flex-col p-3 bg-background-light dark:bg-background-dark/50 rounded-lg border border-primary/5">
+<span class="text-slate-500 dark:text-slate-400 text-xs font-medium">E-mail de Contato</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">ricardo.silva@email.com</span>
+</div>
+<div class="flex flex-col p-3 bg-background-light dark:bg-background-dark/50 rounded-lg border border-primary/5">
+<span class="text-slate-500 dark:text-slate-400 text-xs font-medium">Curso Escolhido</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Desenvolvimento Web Full Stack</span>
+</div>
+<div class="flex flex-col p-3 bg-background-light dark:bg-background-dark/50 rounded-lg border border-primary/5">
+<span class="text-slate-500 dark:text-slate-400 text-xs font-medium">Data de Registro</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">24 de Outubro, 2023</span>
+</div>
+</div>
+</div>
+<!-- Information Card -->
+<div class="px-6 pb-6">
+<div class="flex flex-col md:flex-row gap-4 p-4 rounded-xl bg-slate-50 dark:bg-[#3a2820] border border-primary/10">
+<div class="w-full md:w-48 h-32 shrink-0 bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden" data-alt="Digital workspace with laptop and notebook" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9acJapRFXLKhAFWJuZ6Ti6MpzT0skcBBwjXTd_ooE3p5V1EkOPsAXQRH0q5_46C3tjKJEF46vPRoedgrWNVlUwixsyYHtr9dnOAV4dJouJBB1vdpd1M1hcLeVZeC2YBx289zsHHMWGesqQmBPbpwnoE4kYz29F-w7Sg2Y1Pfig8SkKNO6Xj9pbKcpjAOS3eblr8T6xyelgM4cpcFroYlYtpKuiVq5H-aju3bsgHl50G4Ule_KRHz73gXnubwwb0Btcykm_q3g-yJv");'>
+</div>
+<div class="flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm">info</span>
+<p class="text-sm font-bold uppercase tracking-tight">Status: Pendente</p>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                        O aluno concluiu todas as etapas do cadastro inicial. Por favor, valide o processamento do pagamento antes de liberar as trilhas de aprendizado.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Action Section -->
+<div class="p-6 bg-slate-50 dark:bg-background-dark/30 border-t border-primary/10 flex flex-col items-center">
+<button class="w-full md:w-auto flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-primary/20 group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">verified_user</span>
+<span class="text-lg">Ativar Acesso Agora</span>
+</button>
+<p class="mt-4 text-xs text-slate-500 dark:text-slate-400 text-center italic">
+                Ao clicar em ativar, o aluno receberá automaticamente os dados de login por e-mail.
+            </p>
+</div>
+<!-- Footer -->
+<div class="p-6 text-center">
+<p class="text-slate-400 dark:text-slate-500 text-xs">
+                Este é um e-mail automático gerado pelo Sistema de Gestão de Alunos.<br/>
+                © 2023 Plataforma de Ensino Digital. Todos os direitos reservados.
+            </p>
+</div>
+</div>
+</body></html>

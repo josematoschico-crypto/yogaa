@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yoga em Casa - Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                        "celeste": "#b2ebf2",
+                        "marrom": "#5d4037",
+                        "lilas": "#e1bee7",
+                        "turquesa": "#4db6ac",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen pb-24">
+<!-- Header Section -->
+<header class="p-6 flex items-center justify-between bg-white/50 dark:bg-marrom/20 backdrop-blur-md sticky top-0 z-40">
+<div class="flex items-center gap-3">
+<div class="bg-turquesa/20 p-2 rounded-full text-turquesa">
+<span class="material-symbols-outlined text-3xl">spa</span>
+</div>
+<div>
+<h1 class="text-xl font-bold">Olá, Praticante</h1>
+<p class="text-sm text-slate-600 dark:text-slate-400">Namastê. Pronto para sua prática?</p>
+</div>
+</div>
+<button class="bg-slate-100 dark:bg-marrom/40 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300">notifications</span>
+</button>
+</header>
+<!-- Progress Journey Card -->
+<section class="px-6 py-4">
+<div class="bg-gradient-to-br from-celeste/40 to-lilas/40 dark:from-marrom/60 dark:to-marrom/80 p-6 rounded-xl border border-white/20 shadow-sm">
+<div class="flex justify-between items-end mb-4">
+<div>
+<h2 class="text-lg font-bold text-marrom dark:text-lilas">Sua Jornada Zen</h2>
+<p class="text-sm text-marrom/70 dark:text-slate-300">12 de 18 aulas concluídas</p>
+</div>
+<span class="text-2xl font-bold text-primary">65%</span>
+</div>
+<div class="w-full bg-white/50 dark:bg-slate-800 rounded-full h-3">
+<div class="bg-primary h-3 rounded-full" style="width: 65%;"></div>
+</div>
+<p class="mt-4 text-xs font-medium text-marrom dark:text-slate-300 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span>
+                Você praticou 4 dias seguidos! Continue assim.
+            </p>
+</div>
+</section>
+<!-- My Modules Section -->
+<section class="py-4">
+<div class="px-6 flex justify-between items-center mb-4">
+<h2 class="text-xl font-bold">Meus Módulos</h2>
+<button class="text-primary text-sm font-semibold">Ver todos</button>
+</div>
+<div class="flex overflow-x-auto gap-4 px-6 pb-4 no-scrollbar">
+<!-- Module Card 1 -->
+<div class="min-w-[260px] bg-white dark:bg-marrom/30 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-marrom/20">
+<div class="h-32 bg-slate-200 dark:bg-slate-700 relative" data-alt="Pessoa praticando Hatha Yoga suavemente" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6fYXwju3GxHhEY0ed2qdHwHjTRM7hTwabtBmkzm5Xaf6tUs0lhUgpZcGj46_m2_je_b9PLHcXz3NWlAdughCBzWbmtQ2qe5aBIeb5pJds7q7EW0PEMCxeFMP7l1MOSvhgUXoUADctnSX_psin1kxZa1lbLgtpOuFR0GhMUL2m7F7BPeI2s3EMP41oGU3K1XJIxdAd9Arq0IPNWlpxTc_MP7wk240E2DM093I8uSBJN0DH8vVUi81BvhsvdmiOgT0MLbc8g4KHevXQ'); background-size: cover; background-position: center;">
+<div class="absolute top-2 right-2 bg-turquesa text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">Concluído</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-base mb-1">Introdução ao Hatha</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">8 Vídeos • 45min total</p>
+</div>
+</div>
+<!-- Module Card 2 -->
+<div class="min-w-[260px] bg-white dark:bg-marrom/30 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-marrom/20">
+<div class="h-32 bg-slate-200 dark:bg-slate-700 relative" data-alt="Silhueta de yoga ao nascer do sol" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5i0Ed7SJqqjYNCVVCneZXxCXkUR5gRF-L2Ewy3bRL04z3yzJTzmeBsZELDPStzmmekrgQ3alwwXU6wJJ8E1fSPodepxL4PrrXm2WAis2u7KLEgcXidbYatA4TqzY_XdmIiqJ3nX5Xk7dXRiJpigSEgYjVyBRCoTShFvBWrVpatAs71IgAU47suezcqBCwYvis3nTBTxue3VyHSlhY2Xe3abAe07Ny_5hq6ynFRNIxPQoZiT8UfuSeNQ-aW3DhQ2jpwahcm9RwM4WW'); background-size: cover; background-position: center;">
+<div class="absolute top-2 right-2 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">Em Aberto</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-base mb-1">Saudação ao Sol</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">12 Vídeos • 1h 20min total</p>
+</div>
+</div>
+<!-- Module Card 3 -->
+<div class="min-w-[260px] bg-white dark:bg-marrom/30 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-marrom/20">
+<div class="h-32 bg-slate-200 dark:bg-slate-700 relative" data-alt="Pessoa meditando em ambiente zen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6drZEaO2dkB6T1U6d-MwZYXnOgnAv_NkKWiDm6x04mAc3G5TMHzDO_RREAeDpxVKfOQ-RxppddcWWXdmSWYdVhpGTfIhanfuDNNXGuiMGAcT414u3HehNjxqfibJ6P5WQetY7e2IaxVyJRfrrzwUFpOdNDHyG3HREP8HXsWeZoREgsjfP-g7uwD5wtVop48DyEDwBmSRLXcdSNhdyhR9Q59x1bdF6Uj-F1wY5BL7UGic4J8XOFFRz3phqzyChv1QPVuvtSl7YWgCm'); background-size: cover; background-position: center;">
+<div class="absolute top-2 right-2 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">Em Aberto</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-base mb-1">Vinyasa Flow Inicial</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">5 Vídeos • 50min total</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tasks Section -->
+<section class="px-6 py-4">
+<h2 class="text-xl font-bold mb-4">Tarefas e Prazos</h2>
+<div class="space-y-3">
+<!-- Task Item 1 -->
+<div class="flex items-center gap-4 bg-white dark:bg-marrom/20 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-marrom/10">
+<div class="bg-turquesa/10 text-turquesa p-3 rounded-lg">
+<span class="material-symbols-outlined">air</span>
+</div>
+<div class="flex-1">
+<h4 class="font-semibold text-sm">Prática de Respiração 10min</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Entrega: Hoje, 18:00</p>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="text-[10px] font-bold text-orange-500 bg-orange-100 dark:bg-orange-900/30 px-2 py-0.5 rounded uppercase">Pendente</span>
+</div>
+</div>
+<!-- Task Item 2 -->
+<div class="flex items-center gap-4 bg-white dark:bg-marrom/20 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-marrom/10">
+<div class="bg-lilas/20 text-marrom dark:text-lilas p-3 rounded-lg">
+<span class="material-symbols-outlined">self_improvement</span>
+</div>
+<div class="flex-1">
+<h4 class="font-semibold text-sm">Postura da Árvore (Vriksasana)</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Entrega: Amanhã</p>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="text-[10px] font-bold text-orange-500 bg-orange-100 dark:bg-orange-900/30 px-2 py-0.5 rounded uppercase">Pendente</span>
+</div>
+</div>
+<!-- Task Item 3 -->
+<div class="flex items-center gap-4 bg-white dark:bg-marrom/20 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-marrom/10 opacity-70">
+<div class="bg-slate-100 dark:bg-slate-800 text-slate-400 p-3 rounded-lg">
+<span class="material-symbols-outlined">done_all</span>
+</div>
+<div class="flex-1">
+<h4 class="font-semibold text-sm line-through">Alinhamento de Coluna</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Concluído ontem</p>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="text-[10px] font-bold text-turquesa bg-turquesa/10 px-2 py-0.5 rounded uppercase">Concluído</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating AI Assistant -->
+<div class="fixed bottom-24 right-6 z-50">
+<button class="bg-primary text-white w-14 h-14 rounded-full shadow-lg shadow-primary/40 flex items-center justify-center hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">smart_toy</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-celeste opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-celeste"></span>
+</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-marrom border-t border-slate-200 dark:border-marrom/40 px-6 py-3 z-50">
+<div class="flex items-center justify-between max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined FILL">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">skateboarding</span>
+<span class="text-[10px] font-bold">Aulas</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="text-[10px] font-bold">Tarefas</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold">Perfil</span>
+</a>
+</div>
+</nav>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .FILL {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</body></html>

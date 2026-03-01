@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00CED1", // Turquesa
+                        "celeste": "#B2FFFF",
+                        "marrom": "#5D4037",
+                        "background-light": "#F8F6F6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<title>Ativação de Aluno</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-marrom dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center bg-white dark:bg-marrom/20 p-4 border-b border-primary/10 justify-between sticky top-0 z-10 backdrop-blur-md">
+<div class="text-primary flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-4xl">local_florist</span>
+</div>
+<h2 class="text-marrom dark:text-celeste text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-12">Ativação de Aluno</h2>
+</header>
+<main class="flex-1 flex flex-col max-w-lg mx-auto w-full p-4 gap-6">
+<!-- User Info Card -->
+<section class="flex py-8 @container">
+<div class="flex w-full flex-col gap-6 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 border-4 border-celeste shadow-lg" data-alt="Foto de perfil profissional de um homem sorrindo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvXJl5fptiCZ7H9zmP2RnR2TBsp0urB36CCL7-yQEFG7PG3pDLGImqaKswBBnYcFD_ArH46VUp-lOxIwXHWgREBjzYqfBcBRhRRLkAvSEXqOeFS7K_lWEpgJ-jCv6fQUzHaa9UwWOYBKcyRfYS4Fjk-jKGN7G01U74u2asjdGrVYRL-tO3FXoC-NqiRbH7vwWJIkaKBHMU6SX1bYcNOVHFaRF-VX38bBt_GgDnkDCR-IAKb3E1uhsj10vQmfeHEBcrBwXdGW4QEcBj");'>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-white p-1 rounded-full border-2 border-white">
+<span class="material-symbols-outlined text-sm block">verified</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<h1 class="text-marrom dark:text-white text-2xl font-bold leading-tight tracking-tight">João Silva</h1>
+<p class="text-primary font-medium text-base leading-normal">joao.silva@email.com</p>
+<div class="mt-2 px-3 py-1 bg-marrom/10 dark:bg-primary/20 rounded-full">
+<p class="text-marrom dark:text-celeste text-xs font-semibold uppercase tracking-wider">Status: Aguardando Ativação</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Action -->
+<section class="flex flex-col gap-4">
+<div class="flex px-4 py-3 justify-center">
+<button class="flex min-w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold leading-normal tracking-wide shadow-lg hover:bg-primary/90 transition-colors">
+<span class="truncate">Desbloquear Acesso Total</span>
+</button>
+</div>
+<!-- Confirmation Toggle/Visual -->
+<div class="p-2">
+<div class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-primary/20 bg-white dark:bg-marrom/30 p-5 shadow-sm sm:flex-row sm:items-center">
+<div class="flex flex-row gap-4 items-start">
+<div class="bg-celeste/30 p-2 rounded-lg text-primary">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-marrom dark:text-white text-base font-bold leading-tight">Liberação Imediata</p>
+<p class="text-marrom/70 dark:text-celeste/70 text-sm font-normal leading-normal">Esta ação liberará todos os módulos de aula além das 3 gratuitas.</p>
+</div>
+</div>
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-marrom/20 dark:bg-slate-700 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary transition-all">
+<div class="h-full w-[27px] rounded-full bg-white shadow-md"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</section>
+<!-- Instructional Info -->
+<section class="mt-4 px-4">
+<div class="flex items-center gap-3 p-4 bg-celeste/20 rounded-xl border border-celeste/40">
+<span class="material-symbols-outlined text-primary">info</span>
+<p class="text-xs text-marrom/80 dark:text-celeste/90">O aluno receberá uma notificação automática assim que o acesso for liberado.</p>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation -->
+<footer class="mt-auto">
+<div class="flex gap-2 border-t border-marrom/10 bg-white dark:bg-marrom/40 px-4 pb-6 pt-3">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-marrom/50 dark:text-celeste/50 hover:text-primary transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">home</span>
+</div>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">person</span>
+</div>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-marrom/50 dark:text-celeste/50 hover:text-primary transition-colors" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">settings</span>
+</div>
+</a>
+</div>
+</footer>
+</div>
+</body></html>

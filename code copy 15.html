@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yoga em Casa - Cadastro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13", // Theme mandatory primary
+                        "celeste": "#B2FFFF",
+                        "brown-accent": "#5D4037",
+                        "lilac": "#E6E6FA",
+                        "turquoise": "#40E0D0",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .bg-gradient-header {
+            background: linear-gradient(135deg, #40E0D0 0%, #E6E6FA 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="text-turquoise flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-4xl">filter_vintage</span>
+</div>
+<h2 class="text-brown-accent dark:text-lilac text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Yoga em Casa</h2>
+</div>
+<!-- Hero Section with Lotus Theme -->
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-gradient-header @[480px]:rounded-xl min-h-[240px] relative" data-alt="Serene yoga practitioner in a lotus pose with a turquoise and lilac abstract background">
+<div class="absolute inset-0 bg-black/10"></div>
+<div class="relative p-6 text-center">
+<span class="material-symbols-outlined text-white text-6xl opacity-80 mb-2">spa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Header Text -->
+<div class="px-4 pt-6 pb-2 text-center max-w-2xl mx-auto">
+<h1 class="text-brown-accent dark:text-lilac tracking-tight text-[32px] font-bold leading-tight">Solicitar Acesso</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal mt-2">
+                Seja bem-vindo. Preencha os dados abaixo para que nossa equipe possa validar seu perfil de aluno.
+            </p>
+</div>
+<!-- Form Container -->
+<div class="flex flex-col max-w-[520px] mx-auto w-full gap-5 px-4 py-6">
+<!-- Name Field -->
+<label class="flex flex-col w-full">
+<p class="text-slate-700 dark:text-slate-200 text-sm font-semibold leading-normal pb-2 ml-1">Nome Completo</p>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">person</span>
+<input class="form-input flex w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:ring-2 focus:ring-turquoise focus:border-turquoise h-14 pl-12 pr-4 text-base placeholder:text-slate-400" placeholder="Ex: Maria Silva" type="text"/>
+</div>
+</label>
+<!-- Email Field -->
+<label class="flex flex-col w-full">
+<p class="text-slate-700 dark:text-slate-200 text-sm font-semibold leading-normal pb-2 ml-1">E-mail</p>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">mail</span>
+<input class="form-input flex w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:ring-2 focus:ring-turquoise focus:border-turquoise h-14 pl-12 pr-4 text-base placeholder:text-slate-400" placeholder="seu@email.com" type="email"/>
+</div>
+</label>
+<!-- Experience Level Field -->
+<label class="flex flex-col w-full">
+<p class="text-slate-700 dark:text-slate-200 text-sm font-semibold leading-normal pb-2 ml-1">Nível de Experiência em Yoga</p>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">self_improvement</span>
+<select class="form-select flex w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:ring-2 focus:ring-turquoise focus:border-turquoise h-14 pl-12 pr-4 text-base appearance-none">
+<option disabled="" selected="" value="">Selecione seu nível</option>
+<option value="iniciante">Iniciante (Nunca pratiquei)</option>
+<option value="intermediario">Intermediário (Pratico ocasionalmente)</option>
+<option value="avancado">Avançado (Pratico regularmente)</option>
+</select>
+</div>
+</label>
+<!-- Notice Box -->
+<div class="bg-celeste/20 dark:bg-turquoise/10 border border-turquoise/30 rounded-xl p-4 flex gap-3 items-start">
+<span class="material-symbols-outlined text-turquoise">info</span>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-snug">
+                    Suas informações serão enviadas para análise do administrador. Você receberá um e-mail assim que seu acesso for autorizado.
+                </p>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold text-lg h-14 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
+                    Enviar para Autorização
+                    <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+<!-- Footer Small Text -->
+<p class="text-center text-xs text-slate-500 dark:text-slate-500 mt-4">
+                © 2024 Yoga em Casa • Namastê
+            </p>
+</div>
+<div class="h-10 bg-background-light dark:bg-background-dark"></div>
+</div>
+</body></html>
